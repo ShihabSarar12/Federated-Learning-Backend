@@ -1,0 +1,122 @@
+[
+  {
+    "time": 0,
+    "requestsPerSec": 2,
+    "avgLatency": 847.06375,
+    "errorRate": 0
+  },
+  {
+    "time": 1,
+    "requestsPerSec": 8,
+    "avgLatency": 1354.3929625,
+    "errorRate": 0
+  },
+  {
+    "time": 2,
+    "requestsPerSec": 6,
+    "avgLatency": 1566.3064833333335,
+    "errorRate": 0
+  },
+  {
+    "time": 3,
+    "requestsPerSec": 5,
+    "avgLatency": 1543.07928,
+    "errorRate": 0
+  },
+  {
+    "time": 4,
+    "requestsPerSec": 9,
+    "avgLatency": 1549.8504777777778,
+    "errorRate": 0
+  },
+  {
+    "time": 5,
+    "requestsPerSec": 6,
+    "avgLatency": 1549.9078833333333,
+    "errorRate": 0
+  },
+  {
+    "time": 6,
+    "requestsPerSec": 5,
+    "avgLatency": 1494.8973400000002,
+    "errorRate": 0
+  },
+  {
+    "time": 7,
+    "requestsPerSec": 9,
+    "avgLatency": 1430.4060111111112,
+    "errorRate": 0
+  },
+  {
+    "time": 8,
+    "requestsPerSec": 7,
+    "avgLatency": 1417.1805857142858,
+    "errorRate": 0
+  },
+  {
+    "time": 9,
+    "requestsPerSec": 6,
+    "avgLatency": 1427.14555,
+    "errorRate": 0
+  },
+  {
+    "time": 10,
+    "requestsPerSec": 7,
+    "avgLatency": 1446.2836714285713,
+    "errorRate": 0
+  },
+  {
+    "time": 11,
+    "requestsPerSec": 8,
+    "avgLatency": 1533.4093374999998,
+    "errorRate": 0
+  },
+  {
+    "time": 12,
+    "requestsPerSec": 5,
+    "avgLatency": 1463.34318,
+    "errorRate": 0
+  },
+  {
+    "time": 13,
+    "requestsPerSec": 7,
+    "avgLatency": 1439.653214285714,
+    "errorRate": 0
+  },
+  {
+    "time": 14,
+    "requestsPerSec": 8,
+    "avgLatency": 1509.04005,
+    "errorRate": 0
+  },
+  {
+    "time": 15,
+    "requestsPerSec": 5,
+    "avgLatency": 1556.7938000000001,
+    "errorRate": 0
+  },
+  {
+    "time": 16,
+    "requestsPerSec": 7,
+    "avgLatency": 1590.4720714285716,
+    "errorRate": 0
+  },
+  {
+    "time": 17,
+    "requestsPerSec": 8,
+    "avgLatency": 1480.08295,
+    "errorRate": 0
+  },
+  {
+    "time": 18,
+    "requestsPerSec": 5,
+    "avgLatency": 1439.37342,
+    "errorRate": 0
+  },
+  {
+    "time": 19,
+    "requestsPerSec": 7,
+    "avgLatency": 1426.3963714285715,
+    "errorRate": 0
+  }
+]

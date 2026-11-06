@@ -1,0 +1,394 @@
+[
+    {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "entity",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum EarIdentification.Department",
+                "name": "department",
+                "type": "uint8"
+            }
+        ],
+        "name": "DepartmentUpdated",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "index",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "enum EarIdentification.Department",
+                "name": "department",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "string",
+                "name": "cid",
+                "type": "string"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "timestamp",
+                "type": "uint256"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "entity",
+                "type": "address"
+            }
+        ],
+        "name": "ImageRegistered",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "cid",
+                "type": "string"
+            },
+            {
+                "internalType": "address",
+                "name": "entity",
+                "type": "address"
+            }
+        ],
+        "name": "registerImageToDepartment",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "entity",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum EarIdentification.Role",
+                "name": "role",
+                "type": "uint8"
+            }
+        ],
+        "name": "RoleUpdated",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "entity",
+                "type": "address"
+            },
+            {
+                "internalType": "enum EarIdentification.Department",
+                "name": "dept",
+                "type": "uint8"
+            }
+        ],
+        "name": "setDepartment",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "entity",
+                "type": "address"
+            },
+            {
+                "internalType": "enum EarIdentification.Role",
+                "name": "role_",
+                "type": "uint8"
+            }
+        ],
+        "name": "setRole",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "admin",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "enum EarIdentification.Department",
+                "name": "dept",
+                "type": "uint8"
+            }
+        ],
+        "name": "departmentImageCount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "departmentOf",
+        "outputs": [
+            {
+                "internalType": "enum EarIdentification.Department",
+                "name": "",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "enum EarIdentification.Department",
+                "name": "dept",
+                "type": "uint8"
+            },
+            {
+                "internalType": "uint256",
+                "name": "start",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+            }
+        ],
+        "name": "getDepartmentCIDs",
+        "outputs": [
+            {
+                "internalType": "string[]",
+                "name": "cids",
+                "type": "string[]"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "globalIndices",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "start",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+            }
+        ],
+        "name": "getMyDepartmentCIDs",
+        "outputs": [
+            {
+                "internalType": "string[]",
+                "name": "cids",
+                "type": "string[]"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "globalIndices",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "start",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "limit",
+                "type": "uint256"
+            }
+        ],
+        "name": "getUserCIDs",
+        "outputs": [
+            {
+                "internalType": "string[]",
+                "name": "cids",
+                "type": "string[]"
+            },
+            {
+                "internalType": "uint256[]",
+                "name": "globalIndices",
+                "type": "uint256[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            }
+        ],
+        "name": "getUserDepartment",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "assigned",
+                "type": "bool"
+            },
+            {
+                "internalType": "enum EarIdentification.Department",
+                "name": "dept",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            },
+            {
+                "internalType": "enum EarIdentification.Department",
+                "name": "dept",
+                "type": "uint8"
+            }
+        ],
+        "name": "isUserInDepartment",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            }
+        ],
+        "name": "myDepartmentImageCount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "roles",
+        "outputs": [
+            {
+                "internalType": "enum EarIdentification.Role",
+                "name": "",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "user",
+                "type": "address"
+            }
+        ],
+        "name": "userImageCount",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

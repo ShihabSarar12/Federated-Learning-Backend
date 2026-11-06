@@ -1,0 +1,44 @@
+[
+  {
+    "load": 10,
+    "avgLatency": 1410.4,
+    "requestsPerSec": 6.921555702043507,
+    "errorRate": 0
+  },
+  {
+    "load": 20,
+    "avgLatency": 2823.36,
+    "requestsPerSec": 6.65783371977476,
+    "errorRate": 0
+  },
+  {
+    "load": 30,
+    "avgLatency": 4348.35,
+    "requestsPerSec": 6.384386371154482,
+    "errorRate": 0
+  },
+  {
+    "load": 40,
+    "avgLatency": 6060.43,
+    "requestsPerSec": 5.960264900662252,
+    "errorRate": 0
+  },
+  {
+    "load": 50,
+    "avgLatency": 7502.6,
+    "requestsPerSec": 4.955401387512389,
+    "errorRate": 0.25333333333333335
+  },
+  {
+    "load": 60,
+    "avgLatency": 8860.91,
+    "requestsPerSec": 3.4722222222222223,
+    "errorRate": 1.4285714285714286
+  },
+  {
+    "load": 70,
+    "avgLatency": 0,
+    "requestsPerSec": 0,
+    "errorRate": 0
+  }
+]
